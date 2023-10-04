@@ -12,7 +12,7 @@ const Signup = () => {
     const [checked, setChecked] = useState(false)
     return (
         <View style={styles.container}>
-            <AuthHeader title="Sign up"/>
+            <AuthHeader title="Sign Up"/>
             <Input label="Name" placeholder="John Doe" />
             <Input label="Email" placeholder="example@gmail.com" />
             <Input isPassword label="Password" placeholder="******" />
@@ -20,9 +20,12 @@ const Signup = () => {
                 <Checkbox checked={checked} onCheck={setChecked} />
                 <Text style={styles.agreeText}>I agree with <Text style={styles.agreeTextbold}>Terms</Text> & <Text style={styles.agreeTextbold}>Privacy</Text></Text>
             </View>
-            <Button style={styles.button} title="Sign In"/>
+            <Button style={styles.button} title="Sign Up"/>
             <Separator text="Or sign up with" />
             <GoogleLogin />
+            <Text style={styles.footerText}>Already have an account?
+            <Text style={styles.footerLink}>Sign In</Text>
+            </Text>
         </View>
     )
 }
