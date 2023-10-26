@@ -35,7 +35,7 @@ const Tabs = () => {
           : require('./src/assets/tabs/clarity_home-grey.png');
         } else if (route.name === 'Favorites') {
           icon = focused
-          ? require('./src/assets/tabs/marker-solid.png')
+          ? require('./src/assets/tabs/marker_solid.png')
           : require('./src/assets/tabs/marker_grey.png');
         } else if (route.name === 'Profile') {
           icon = focused
@@ -57,7 +57,7 @@ const Tabs = () => {
 }
 
 const App = () => {
-  const isSignedIn = true
+  const isSignedIn = false
 
   useEffect(() =>{
     GoogleSignin.configure({

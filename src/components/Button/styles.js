@@ -6,10 +6,10 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 8,
         paddingVertical:20,
         borderRadius:8,
-        marginTop:55
+        flex: 1
     },
     title: {
-        color:colors.white,
+        color: colors.white,
         textAlign: 'center',
         fontSize: 16,
         fontWeight:'bold',

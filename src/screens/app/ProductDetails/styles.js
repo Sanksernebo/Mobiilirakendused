@@ -1,6 +1,7 @@
 import { StyleSheet, Dimensions } from "react-native";
 import { colors } from "../../../utils/colors";
 const {height} = Dimensions.get('window')
+
 export const styles = StyleSheet.create({
         image: {
             width: '100%',
@@ -27,6 +28,23 @@ export const styles = StyleSheet.create({
             color: colors.textGray,
             fontWeight: '300',
             marginVertical: 8
+        },
+        footer: {
+            padding: 24,
+            flexDirection: 'row',
+            alignItems: 'center'
+        },
+        save: {
+            flex: 1
+        },
+        marker_solidContainer: {
+            backgroundColor: colors.lightGrey,
+            padding: 8,
+            borderRadius: 8
+        },
+        marker_solidIcon: {
+            width: 34,
+            height: 34
         }
     }
 )
