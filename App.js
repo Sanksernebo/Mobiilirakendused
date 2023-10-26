@@ -59,14 +59,14 @@ const Tabs = () => {
 const App = () => {
   const isSignedIn = true
 
-  useEffect(() =>{
-    GoogleSignin.configure({
-      scopes:['https://www.googleapis.com/auth/drive.readonly'],
-      webClientId: Config.WEB_CLIENT_ID,
-      offlineAccess:true,
-      iosClientId: Config.IOS_CLIENT_ID
-    })
-  },[])
+  // useEffect(() =>{
+  //   GoogleSignin.configure({
+  //     scopes:['https://www.googleapis.com/auth/drive.readonly'],
+  //     webClientId: Config.WEB_CLIENT_ID,
+  //     offlineAccess:true,
+  //     iosClientId: Config.IOS_CLIENT_ID
+  //   })
+  // },[])
 
   const theme = {
     colors: {
