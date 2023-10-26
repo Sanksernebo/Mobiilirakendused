@@ -32,19 +32,32 @@ export const styles = StyleSheet.create({
         footer: {
             padding: 24,
             flexDirection: 'row',
-            alignItems: 'center'
+            alignItems: 'center',
+            marginRight: 55
         },
         save: {
             flex: 1
         },
         marker_solidContainer: {
             backgroundColor: colors.lightGrey,
-            padding: 8,
-            borderRadius: 8
+            padding: 18,
+            borderRadius: 8,
+            marginRight: 16
         },
         marker_solidIcon: {
-            width: 34,
-            height: 34
+            width: 24,
+            height: 24
+        },
+        backContainer: {
+            backgroundColor: colors.white,
+            padding: 10,
+            margin: 24,
+            borderRadius: 8,
+            position: 'absolute'
+        },
+        backIcon: {
+            width: 20,
+            height: 20
         }
     }
 )
