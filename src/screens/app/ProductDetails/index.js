@@ -41,7 +41,7 @@ const ProductDetails = ({navigation, route}) => {
                     <Pressable style={styles.marker_solidContainer}>
                         <Image style={styles.marker_solidIcon} source={require('../../../assets/tabs/marker_solid.png')} />
                     </Pressable>
-                        <Button title="Contact Seller" />
+                        <Button onPress={onContact} style='button' title="Contact Seller" />
                 </View>
         </SafeAreaView>
     )
