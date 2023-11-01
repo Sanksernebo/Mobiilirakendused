@@ -14,6 +14,9 @@ const Profile = ({navigation}) => {
     const onSettingsPress = () => {
         navigation.navigate('Settings')
     }
+    const onNewListingPress = () => {
+        navigation.navigate('CreateListing')
+    }
     return(
         <SafeAreaView style={{fkex:1}} >
             <View style={styles.container}>
@@ -25,7 +28,7 @@ const Profile = ({navigation}) => {
                         <ListItem title="My Listings" subtitle={`Already have ${num} listings` } />
                         <ListItem title="Settings" subtitle="Account, FAQ, Contact" onPress={onSettingsPress} />
                     </View>
-                <Button title="Add New Listing" />
+                <Button onPress={onNewListingPress} title="Add New Listing" />
             </View>
         </SafeAreaView>
     )
