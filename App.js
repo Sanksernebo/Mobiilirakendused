@@ -7,9 +7,9 @@ import SignIn from "./src/screens/auth/SignIn/SignIn";
 import Home from "./src/screens/app/Home";
 import Profile from "./src/screens/app/Profile";
 import Favorites from "./src/screens/app/Favorites";
+import Settings from "./src/screens/app/Settings";
+
 import ProductDetails from "./src/screens/app/ProductDetails";
-
-
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -22,6 +22,15 @@ const Tab =createBottomTabNavigator()
 
 import Config from "react-native-config";
 import { colors } from "./src/utils/colors";
+
+const ProfileStack = () => {
+  return(
+    <Stack.Navigator>
+      <Stack.Screen name="Profile" component={Profile} options={{headerShown: false}} />
+      <Stack.Screen name="Settings" component={Settings} options={{headerShown: false}} />
+    </Stack.Navigator>
+  )
+}
 
 const Tabs = () => {
   return (
@@ -51,7 +60,7 @@ const Tabs = () => {
     >
       <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="Favorites" component={Favorites} />
-      <Tab.Screen name="Profile" component={Profile} />
+      <Tab.Screen name="Profile" component={ProfileStack} />
     </Tab.Navigator> 
   )
 }

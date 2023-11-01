@@ -22,7 +22,7 @@ export const styles = StyleSheet.create({
         color: colors.blue,
         fontSize: 18,
         fontWeight: 'bold',
-        marginBottom: 6
+        marginTop: 6
     },
     subtitle: {
         color: colors.grey,
