@@ -14,7 +14,9 @@ export const styles = StyleSheet.create({
     },
     image: {
     width: 100,
-    height: 100
+    height: 100,
+    borderRadius: 8,
+    marginRight: 8
     },
     uploadContainer: {
         width: 100,
@@ -25,7 +27,8 @@ export const styles = StyleSheet.create({
         borderStyle: 'dotted',
         flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        marginRight: 8
     },
     uploadCircle: {
         width: 32,
@@ -40,5 +43,20 @@ export const styles = StyleSheet.create({
         color: colors.white,
         fontSize: 28,
         marginTop: -4
+    },
+    imageRow:{
+        flexDirection: 'row',
+        alignItems: 'center',
+        flexWrap: 'wrap'
+    },
+    delete:{
+        width: 24,
+        height: 24,
+        marginTop: -115,
+        marginLeft: 85
+    },
+    textarea: {
+        minHeight: 120,
+        paddingTop: 16
     }
 })
